@@ -4,7 +4,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>For My Lovely Sister Ridhima ❤️</title>
 
 <style>
@@ -97,13 +96,14 @@ button:hover {
     }
 }
 
-/* FRONT PAGE */
+/* FRONT PAGE PROFILE IMAGE */
 
 .profile {
     width: 280px;
     height: 280px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: center;
     border: 9px solid white;
     box-shadow: 0 0 30px #ff80ab;
     margin: 35px auto;
@@ -119,11 +119,11 @@ button:hover {
 .home-note {
     background: white;
     padding: 30px;
-    max-width: 700px;
+    max-width: 900px;
     margin: 25px auto;
-    border-radius: 25px;
+    border-radius: 30px;
     box-shadow: 0 5px 25px #f8b9d0;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 /* MAIN MENU */
@@ -155,7 +155,7 @@ button:hover {
     margin-bottom: 15px;
 }
 
-/* MEMORIES - SEVEN LARGE IMAGE BOXES */
+/* MEMORIES */
 
 .memory-grid {
     display: grid;
@@ -378,9 +378,7 @@ button:hover {
 
 <body>
 
-<!-- FLOATING FLOWERS -->
 <div id="flowers"></div>
-
 
 <!-- PAGE 1: HOME PAGE -->
 
@@ -388,11 +386,9 @@ button:hover {
 
     <h1>💕 A Special Surprise For You 💕</h1>
 
-    <!-- YOUR SISTER'S MAIN PHOTO -->
-    <!-- ADD YOUR PHOTO AS ridu.jpeg -->
-
+    <!-- Ridhima's actual profile image -->
     <img
-        src="ridu.jpeg"
+        src="./ridu.jpeg"
         class="profile"
         alt="Ridhima Sharma"
     >
@@ -431,42 +427,26 @@ button:hover {
     <div class="menu">
 
         <div class="menu-card" onclick="showPage('memories')">
-
             <div class="emoji">📸</div>
-
             <h2>Memories</h2>
-
             <p>Our beautiful moments together.</p>
-
         </div>
-
 
         <div class="menu-card" onclick="showPage('gifts')">
-
             <div class="emoji">🎁</div>
-
             <h2>Gift Surprise</h2>
-
             <p>Something special for you!</p>
-
         </div>
 
-
         <div class="menu-card" onclick="showPage('letter')">
-
             <div class="emoji">💌</div>
-
             <h2>Letter</h2>
-
             <p>A little message from my heart.</p>
-
         </div>
 
     </div>
 
-    <button class="back" onclick="showPage('home')">
-        ⬅ Back
-    </button>
+    <button class="back" onclick="showPage('home')">⬅ Back</button>
 
 </section>
 
@@ -481,85 +461,49 @@ button:hover {
 
     <div class="memory-grid">
 
-        <!-- MEMORY IMAGE 1 -->
         <div class="memory-box">
-
             <img src="memory1.jpg" alt="Memory 1">
-
             <h3>Memory 1 ❤️</h3>
-
         </div>
 
-
-        <!-- MEMORY IMAGE 2 -->
         <div class="memory-box">
-
             <img src="memory2.jpg" alt="Memory 2">
-
             <h3>Memory 2 🌸</h3>
-
         </div>
 
-
-        <!-- MEMORY IMAGE 3 -->
         <div class="memory-box">
-
             <img src="memory3.jpg" alt="Memory 3">
-
             <h3>Memory 3 💕</h3>
-
         </div>
 
-
-        <!-- MEMORY IMAGE 4 -->
         <div class="memory-box">
-
             <img src="memory4.jpg" alt="Memory 4">
-
             <h3>Memory 4 🦋</h3>
-
         </div>
 
-
-        <!-- MEMORY IMAGE 5 -->
         <div class="memory-box">
-
             <img src="memory5.jpg" alt="Memory 5">
-
             <h3>Memory 5 🌷</h3>
-
         </div>
 
-
-        <!-- MEMORY IMAGE 6 -->
         <div class="memory-box">
-
             <img src="memory6.jpg" alt="Memory 6">
-
             <h3>Memory 6 💞</h3>
-
         </div>
 
-
-        <!-- MEMORY IMAGE 7 -->
         <div class="memory-box">
-
             <img src="memory7.jpg" alt="Memory 7">
-
             <h3>Memory 7 ✨</h3>
-
         </div>
 
     </div>
 
-    <button class="back" onclick="showPage('menu')">
-        ⬅ Back
-    </button>
+    <button class="back" onclick="showPage('menu')">⬅ Back</button>
 
 </section>
 
 
-<!-- PAGE 4: GIFT SURPRISE OPTIONS -->
+<!-- PAGE 4: GIFT OPTIONS -->
 
 <section id="gifts" class="page">
 
@@ -570,31 +514,20 @@ button:hover {
     <div class="gift-options">
 
         <div class="gift-card" onclick="showPage('teddy')">
-
             <div class="emoji">🧸</div>
-
             <h2>Teddy Bear</h2>
-
             <p>A cute teddy just for you!</p>
-
         </div>
 
-
         <div class="gift-card" onclick="showPage('makeup')">
-
             <div class="emoji">💄</div>
-
             <h2>Makeup Kit</h2>
-
             <p>A little beauty surprise!</p>
-
         </div>
 
     </div>
 
-    <button class="back" onclick="showPage('menu')">
-        ⬅ Back
-    </button>
+    <button class="back" onclick="showPage('menu')">⬅ Back</button>
 
 </section>
 
@@ -607,7 +540,6 @@ button:hover {
 
     <div class="gift-detail">
 
-        <!-- ADD TEDDY IMAGE HERE -->
         <img src="teddy.jpg" alt="Teddy Bear">
 
         <h2>My Cute Teddy! 💗</h2>
@@ -618,7 +550,6 @@ button:hover {
 
             Whenever you feel sad, remember that you have
             someone who loves you so much.
-
         </p>
 
         <h3 style="margin-top:20px;">
@@ -627,9 +558,7 @@ button:hover {
 
     </div>
 
-    <button class="back" onclick="showPage('gifts')">
-        ⬅ Back
-    </button>
+    <button class="back" onclick="showPage('gifts')">⬅ Back</button>
 
 </section>
 
@@ -642,7 +571,6 @@ button:hover {
 
     <div class="gift-detail">
 
-        <!-- ADD MAKEUP IMAGE HERE -->
         <img src="makeup.jpg" alt="Makeup Kit">
 
         <h2>My Beautiful Sister! 🌷</h2>
@@ -656,7 +584,6 @@ button:hover {
 
             Your smile, kindness and lovely heart
             make you beautiful every single day.
-
         </p>
 
         <h3 style="margin-top:20px;">
@@ -665,9 +592,7 @@ button:hover {
 
     </div>
 
-    <button class="back" onclick="showPage('gifts')">
-        ⬅ Back
-    </button>
+    <button class="back" onclick="showPage('gifts')">⬅ Back</button>
 
 </section>
 
@@ -680,7 +605,6 @@ button:hover {
 
     <div class="letter-box">
 
-        <!-- LETTER IMAGE -->
         <img src="letter.jpg" alt="Special Sister Picture">
 
         <div class="letter-text">
@@ -688,7 +612,6 @@ button:hover {
             <h2>Dear Ridhima ❤️</h2>
 
             <p>
-
                 I don't know how to express my feelings in words,
                 but I just want to tell you something special.
 
@@ -723,19 +646,15 @@ button:hover {
                 <br><br>
 
                 <b>With Lots Of Love ❤️</b>
-
                 <br>
-
                 Your Loving Brother 💗
-
             </p>
 
         </div>
 
     </div>
 
-
-    <!-- FINAL GIFT SECTION -->
+    <!-- FINAL GIFT -->
 
     <div class="final-gift">
 
@@ -753,9 +672,7 @@ button:hover {
 
     </div>
 
-    <button class="back" onclick="showPage('menu')">
-        ⬅ Back
-    </button>
+    <button class="back" onclick="showPage('menu')">⬅ Back</button>
 
 </section>
 
@@ -772,16 +689,12 @@ button:hover {
 
         <h2>Happy Day, Ridhima! 🎂</h2>
 
-        <!-- CAKE -->
         <div class="cake" id="cakeEmoji">
             🎂
         </div>
 
-        <p>
-            Pick up the knife and cut your cake! 🔪
-        </p>
+        <p>Pick up the knife and cut your cake! 🔪</p>
 
-        <!-- KNIFE -->
         <div class="knife" onclick="cutCake()">
             🔪
         </div>
@@ -790,19 +703,12 @@ button:hover {
             Click the knife to cut your cake! 💕
         </p>
 
-        <!-- PARTY MESSAGE -->
         <h2 id="partyMessage">
-
             🎉 YAYYYY! 🎉
-
             <br>
-
             Lots Of Happiness For You!
-
             <br>
-
             💖🎊🌸🎊💖
-
         </h2>
 
     </div>
@@ -821,9 +727,7 @@ button:hover {
 function showPage(pageId) {
 
     document.querySelectorAll('.page').forEach(page => {
-
         page.classList.remove('active');
-
     });
 
     document.getElementById(pageId).classList.add('active');
@@ -838,13 +742,7 @@ function showPage(pageId) {
 const flowerContainer = document.getElementById('flowers');
 
 const flowers = [
-    '🌸',
-    '💗',
-    '🌷',
-    '💕',
-    '🦋',
-    '✨',
-    '🌹'
+    '🌸', '💗', '🌷', '💕', '🦋', '✨', '🌹'
 ];
 
 function createFlower() {
@@ -899,12 +797,7 @@ function cutCake() {
     // PARTY CONFETTI BLAST
 
     const partyItems = [
-        '🎉',
-        '🎊',
-        '💖',
-        '✨',
-        '🌸',
-        '🥳'
+        '🎉', '🎊', '💖', '✨', '🌸', '🥳'
     ];
 
     for (let i = 0; i < 70; i++) {
