@@ -1,0 +1,935 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Lovely Sister Ridhima ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #ffe0ec, #fff);
+    color: #8b3157;
+    text-align: center;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.page {
+    display: none;
+    min-height: 100vh;
+    padding: 40px 20px;
+    animation: fade 0.7s ease;
+}
+
+.page.active {
+    display: block;
+}
+
+@keyframes fade {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    color: #e75480;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #d63384;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.8;
+}
+
+button {
+    border: none;
+    background: #ff69a6;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e84387;
+    transform: scale(1.07);
+}
+
+.back {
+    background: #d63384;
+}
+
+/* FLOATING FLOWERS */
+
+.floating {
+    position: fixed;
+    bottom: -30px;
+    font-size: 25px;
+    animation: floatUp 9s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    20% { opacity: 1; }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* FRONT PAGE */
+
+.profile {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 9px solid white;
+    box-shadow: 0 0 30px #ff80ab;
+    margin: 35px auto;
+    display: block;
+    animation: profileGlow 2s infinite alternate;
+}
+
+@keyframes profileGlow {
+    from { box-shadow: 0 0 15px #ff80ab; }
+    to { box-shadow: 0 0 40px #ff69a6; }
+}
+
+.home-note {
+    background: white;
+    padding: 30px;
+    max-width: 700px;
+    margin: 25px auto;
+    border-radius: 25px;
+    box-shadow: 0 5px 25px #f8b9d0;
+    font-size: 18px;
+}
+
+/* MAIN MENU */
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+    max-width: 950px;
+    margin: 45px auto;
+}
+
+.menu-card {
+    background: white;
+    padding: 45px 20px;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px #f4b6ce;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    background: #fff0f5;
+}
+
+.menu-card .emoji {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+/* MEMORIES - SEVEN LARGE IMAGE BOXES */
+
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+.memory-box {
+    background: white;
+    padding: 15px;
+    border-radius: 22px;
+    box-shadow: 0 5px 20px #f5b5ce;
+    transition: 0.3s;
+}
+
+.memory-box:hover {
+    transform: translateY(-7px);
+}
+
+.memory-box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+
+.memory-box h3 {
+    padding: 15px;
+    color: #d63384;
+}
+
+/* GIFT OPTIONS */
+
+.gift-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    margin: 40px auto;
+}
+
+.gift-card {
+    background: white;
+    width: 300px;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 5px 25px #f5b5ce;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gift-card:hover {
+    transform: scale(1.06);
+}
+
+.gift-card .emoji {
+    font-size: 95px;
+    margin-bottom: 20px;
+}
+
+/* TEDDY AND MAKEUP */
+
+.gift-detail {
+    max-width: 600px;
+    margin: 35px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 5px 25px #f5b5ce;
+}
+
+.gift-detail img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 25px;
+}
+
+/* LETTER */
+
+.letter-box {
+    max-width: 750px;
+    background: white;
+    margin: 35px auto;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 5px 25px #f5b5ce;
+}
+
+.letter-box img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 25px;
+}
+
+.letter-text {
+    text-align: left;
+    font-size: 18px;
+    line-height: 2;
+}
+
+/* FINAL GIFT */
+
+.final-gift {
+    max-width: 650px;
+    background: white;
+    padding: 35px;
+    margin: 35px auto;
+    border-radius: 25px;
+    box-shadow: 0 5px 25px #f5b5ce;
+}
+
+.gift-icon {
+    font-size: 75px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gift-icon:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* CAKE */
+
+.cake-area {
+    background: white;
+    max-width: 650px;
+    padding: 35px;
+    margin: 30px auto;
+    border-radius: 25px;
+    box-shadow: 0 5px 25px #f5b5ce;
+}
+
+.cake {
+    font-size: 130px;
+    display: inline-block;
+    transition: 0.6s;
+}
+
+.cake.cut {
+    transform: rotate(-15deg) scale(1.1);
+}
+
+.knife {
+    font-size: 65px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.knife:hover {
+    transform: rotate(-40deg) scale(1.2);
+}
+
+#partyMessage {
+    display: none;
+    font-size: 25px;
+    color: #e84393;
+    margin-top: 25px;
+    animation: pop 0.7s infinite alternate;
+}
+
+@keyframes pop {
+    from { transform: scale(1); }
+    to { transform: scale(1.15); }
+}
+
+/* PARTY POPPERS */
+
+.confetti {
+    position: fixed;
+    top: -30px;
+    font-size: 27px;
+    pointer-events: none;
+    animation: confettiFall 3s linear forwards;
+    z-index: 100;
+}
+
+@keyframes confettiFall {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width: 600px) {
+    .profile {
+        width: 210px;
+        height: 210px;
+    }
+
+    .page {
+        padding: 30px 12px;
+    }
+
+    .memory-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .memory-box img {
+        height: 280px;
+    }
+
+    .home-note {
+        font-size: 16px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- FLOATING FLOWERS -->
+<div id="flowers"></div>
+
+
+<!-- PAGE 1: HOME PAGE -->
+
+<section id="home" class="page active">
+
+    <h1>💕 A Special Surprise For You 💕</h1>
+
+    <!-- YOUR SISTER'S MAIN PHOTO -->
+    <!-- ADD YOUR PHOTO AS ridu.jpeg -->
+
+    <img
+        src="ridu.jpeg"
+        class="profile"
+        alt="Ridhima Sharma"
+    >
+
+    <div class="home-note">
+
+        <h2>Dear Ridhima Sharma ❤️</h2>
+
+        <p>
+            You are not just my sister, you are one of the
+            most beautiful blessings of my life.
+            Your smile makes everything special.
+            I made this little website just for you.
+            I hope it brings a big smile to your face! 🌸
+        </p>
+
+        <br>
+
+        <h3>Love You So Much! 💗</h3>
+
+    </div>
+
+    <button onclick="showPage('menu')">
+        Open Your Surprise 🎁
+    </button>
+
+</section>
+
+
+<!-- PAGE 2: MAIN MENU -->
+
+<section id="menu" class="page">
+
+    <h1>Welcome To Your Surprise World 💖</h1>
+
+    <div class="menu">
+
+        <div class="menu-card" onclick="showPage('memories')">
+
+            <div class="emoji">📸</div>
+
+            <h2>Memories</h2>
+
+            <p>Our beautiful moments together.</p>
+
+        </div>
+
+
+        <div class="menu-card" onclick="showPage('gifts')">
+
+            <div class="emoji">🎁</div>
+
+            <h2>Gift Surprise</h2>
+
+            <p>Something special for you!</p>
+
+        </div>
+
+
+        <div class="menu-card" onclick="showPage('letter')">
+
+            <div class="emoji">💌</div>
+
+            <h2>Letter</h2>
+
+            <p>A little message from my heart.</p>
+
+        </div>
+
+    </div>
+
+    <button class="back" onclick="showPage('home')">
+        ⬅ Back
+    </button>
+
+</section>
+
+
+<!-- PAGE 3: MEMORIES -->
+
+<section id="memories" class="page">
+
+    <h1>Our Beautiful Memories 📸</h1>
+
+    <p>Every picture has a beautiful story! 💗</p>
+
+    <div class="memory-grid">
+
+        <!-- MEMORY IMAGE 1 -->
+        <div class="memory-box">
+
+            <img src="memory1.jpg" alt="Memory 1">
+
+            <h3>Memory 1 ❤️</h3>
+
+        </div>
+
+
+        <!-- MEMORY IMAGE 2 -->
+        <div class="memory-box">
+
+            <img src="memory2.jpg" alt="Memory 2">
+
+            <h3>Memory 2 🌸</h3>
+
+        </div>
+
+
+        <!-- MEMORY IMAGE 3 -->
+        <div class="memory-box">
+
+            <img src="memory3.jpg" alt="Memory 3">
+
+            <h3>Memory 3 💕</h3>
+
+        </div>
+
+
+        <!-- MEMORY IMAGE 4 -->
+        <div class="memory-box">
+
+            <img src="memory4.jpg" alt="Memory 4">
+
+            <h3>Memory 4 🦋</h3>
+
+        </div>
+
+
+        <!-- MEMORY IMAGE 5 -->
+        <div class="memory-box">
+
+            <img src="memory5.jpg" alt="Memory 5">
+
+            <h3>Memory 5 🌷</h3>
+
+        </div>
+
+
+        <!-- MEMORY IMAGE 6 -->
+        <div class="memory-box">
+
+            <img src="memory6.jpg" alt="Memory 6">
+
+            <h3>Memory 6 💞</h3>
+
+        </div>
+
+
+        <!-- MEMORY IMAGE 7 -->
+        <div class="memory-box">
+
+            <img src="memory7.jpg" alt="Memory 7">
+
+            <h3>Memory 7 ✨</h3>
+
+        </div>
+
+    </div>
+
+    <button class="back" onclick="showPage('menu')">
+        ⬅ Back
+    </button>
+
+</section>
+
+
+<!-- PAGE 4: GIFT SURPRISE OPTIONS -->
+
+<section id="gifts" class="page">
+
+    <h1>Choose Your Special Gift 🎁</h1>
+
+    <p>Two little surprises waiting for you! 💗</p>
+
+    <div class="gift-options">
+
+        <div class="gift-card" onclick="showPage('teddy')">
+
+            <div class="emoji">🧸</div>
+
+            <h2>Teddy Bear</h2>
+
+            <p>A cute teddy just for you!</p>
+
+        </div>
+
+
+        <div class="gift-card" onclick="showPage('makeup')">
+
+            <div class="emoji">💄</div>
+
+            <h2>Makeup Kit</h2>
+
+            <p>A little beauty surprise!</p>
+
+        </div>
+
+    </div>
+
+    <button class="back" onclick="showPage('menu')">
+        ⬅ Back
+    </button>
+
+</section>
+
+
+<!-- PAGE 5: TEDDY BEAR -->
+
+<section id="teddy" class="page">
+
+    <h1>A Teddy Bear For You 🧸</h1>
+
+    <div class="gift-detail">
+
+        <!-- ADD TEDDY IMAGE HERE -->
+        <img src="teddy.jpg" alt="Teddy Bear">
+
+        <h2>My Cute Teddy! 💗</h2>
+
+        <p>
+            Just like this teddy bear, I wish you always have
+            someone to hug you, comfort you and make you smile.
+
+            Whenever you feel sad, remember that you have
+            someone who loves you so much.
+
+        </p>
+
+        <h3 style="margin-top:20px;">
+            Sending You A Big Hug! 🤗
+        </h3>
+
+    </div>
+
+    <button class="back" onclick="showPage('gifts')">
+        ⬅ Back
+    </button>
+
+</section>
+
+
+<!-- PAGE 6: MAKEUP KIT -->
+
+<section id="makeup" class="page">
+
+    <h1>A Beauty Surprise For You 💄</h1>
+
+    <div class="gift-detail">
+
+        <!-- ADD MAKEUP IMAGE HERE -->
+        <img src="makeup.jpg" alt="Makeup Kit">
+
+        <h2>My Beautiful Sister! 🌷</h2>
+
+        <p>
+            A little makeup kit for my beautiful sister.
+
+            But remember one thing:
+
+            You don't need makeup to look beautiful.
+
+            Your smile, kindness and lovely heart
+            make you beautiful every single day.
+
+        </p>
+
+        <h3 style="margin-top:20px;">
+            Keep Shining! ✨
+        </h3>
+
+    </div>
+
+    <button class="back" onclick="showPage('gifts')">
+        ⬅ Back
+    </button>
+
+</section>
+
+
+<!-- PAGE 7: LETTER -->
+
+<section id="letter" class="page">
+
+    <h1>A Letter From My Heart 💌</h1>
+
+    <div class="letter-box">
+
+        <!-- LETTER IMAGE -->
+        <img src="letter.jpg" alt="Special Sister Picture">
+
+        <div class="letter-text">
+
+            <h2>Dear Ridhima ❤️</h2>
+
+            <p>
+
+                I don't know how to express my feelings in words,
+                but I just want to tell you something special.
+
+                <br><br>
+
+                You are one of the most important people in my life.
+                Thank you for being my sister, my friend and
+                my happiness.
+
+                <br><br>
+
+                Sometimes we fight, sometimes we tease each other,
+                but at the end of the day, you will always have
+                a special place in my heart.
+
+                <br><br>
+
+                I wish your life is always filled with happiness,
+                success, love and beautiful moments.
+
+                Never stop smiling and never stop dreaming.
+
+                <br><br>
+
+                No matter what happens, I will always be there
+                for you.
+
+                <br><br>
+
+                You are precious to me, Ridhima.
+
+                <br><br>
+
+                <b>With Lots Of Love ❤️</b>
+
+                <br>
+
+                Your Loving Brother 💗
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FINAL GIFT SECTION -->
+
+    <div class="final-gift">
+
+        <h2>One Last Surprise For You! 🎁</h2>
+
+        <p>
+            Click on the gift to open your beautiful surprise! 💗
+        </p>
+
+        <div class="gift-icon" onclick="showPage('cake')">
+            🎁
+        </div>
+
+        <h3>Open Your Gift ❤️</h3>
+
+    </div>
+
+    <button class="back" onclick="showPage('menu')">
+        ⬅ Back
+    </button>
+
+</section>
+
+
+<!-- PAGE 8: CAKE SURPRISE -->
+
+<section id="cake" class="page">
+
+    <h1>Surprise Ridhima! 🎉</h1>
+
+    <h2>Let's Celebrate With A Beautiful Cake! 💗</h2>
+
+    <div class="cake-area">
+
+        <h2>Happy Day, Ridhima! 🎂</h2>
+
+        <!-- CAKE -->
+        <div class="cake" id="cakeEmoji">
+            🎂
+        </div>
+
+        <p>
+            Pick up the knife and cut your cake! 🔪
+        </p>
+
+        <!-- KNIFE -->
+        <div class="knife" onclick="cutCake()">
+            🔪
+        </div>
+
+        <p id="cakeInstruction">
+            Click the knife to cut your cake! 💕
+        </p>
+
+        <!-- PARTY MESSAGE -->
+        <h2 id="partyMessage">
+
+            🎉 YAYYYY! 🎉
+
+            <br>
+
+            Lots Of Happiness For You!
+
+            <br>
+
+            💖🎊🌸🎊💖
+
+        </h2>
+
+    </div>
+
+    <button onclick="showPage('home')">
+        Back To Home 🏠
+    </button>
+
+</section>
+
+
+<script>
+
+// PAGE NAVIGATION
+
+function showPage(pageId) {
+
+    document.querySelectorAll('.page').forEach(page => {
+
+        page.classList.remove('active');
+
+    });
+
+    document.getElementById(pageId).classList.add('active');
+
+    window.scrollTo(0, 0);
+
+}
+
+
+// FLOATING FLOWERS AND HEARTS
+
+const flowerContainer = document.getElementById('flowers');
+
+const flowers = [
+    '🌸',
+    '💗',
+    '🌷',
+    '💕',
+    '🦋',
+    '✨',
+    '🌹'
+];
+
+function createFlower() {
+
+    const flower = document.createElement('div');
+
+    flower.className = 'floating';
+
+    flower.innerHTML =
+        flowers[Math.floor(Math.random() * flowers.length)];
+
+    flower.style.left = Math.random() * 100 + 'vw';
+
+    flower.style.animationDuration =
+        (5 + Math.random() * 6) + 's';
+
+    flower.style.fontSize =
+        (18 + Math.random() * 20) + 'px';
+
+    flowerContainer.appendChild(flower);
+
+    setTimeout(() => flower.remove(), 11000);
+
+}
+
+setInterval(createFlower, 600);
+
+
+// CAKE CUTTING AND PARTY POPPERS
+
+let cakeCut = false;
+
+function cutCake() {
+
+    if (cakeCut) return;
+
+    cakeCut = true;
+
+    const cake = document.getElementById('cakeEmoji');
+
+    cake.classList.add('cut');
+
+    cake.innerHTML = '🍰';
+
+    document.getElementById('cakeInstruction').innerHTML =
+        'Cake Cut Successfully! 💗';
+
+    document.getElementById('partyMessage').style.display =
+        'block';
+
+
+    // PARTY CONFETTI BLAST
+
+    const partyItems = [
+        '🎉',
+        '🎊',
+        '💖',
+        '✨',
+        '🌸',
+        '🥳'
+    ];
+
+    for (let i = 0; i < 70; i++) {
+
+        const confetti = document.createElement('div');
+
+        confetti.className = 'confetti';
+
+        confetti.innerHTML =
+            partyItems[Math.floor(Math.random() * partyItems.length)];
+
+        confetti.style.left = Math.random() * 100 + 'vw';
+
+        confetti.style.animationDuration =
+            (2 + Math.random() * 3) + 's';
+
+        document.body.appendChild(confetti);
+
+        setTimeout(() => confetti.remove(), 5000);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
