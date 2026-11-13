@@ -161,14 +161,14 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 25px;
-    max-width: 1100px;
+    max-width: 1400px;
     margin: 35px auto;
 }
 
 .memory-box {
     background: white;
     padding: 15px;
-    border-radius: 22px;
+    border-radius: 25px;
     box-shadow: 0 5px 20px #f5b5ce;
     transition: 0.3s;
 }
@@ -179,8 +179,9 @@ button:hover {
 
 .memory-box img {
     width: 100%;
-    height: 300px;
+    height: 380px;
     object-fit: cover;
+    object-position: center;
     border-radius: 15px;
     display: block;
 }
@@ -365,14 +366,13 @@ button:hover {
     }
 
     .memory-box img {
-        height: 280px;
+        height: 320px;
     }
 
     .home-note {
         font-size: 16px;
     }
 }
-
 </style>
 </head>
 
@@ -386,7 +386,7 @@ button:hover {
 
     <h1>💕 A Special Surprise For You 💕</h1>
 
-    <!-- Ridhima's actual profile image -->
+    <!-- Ridhima's Profile Image -->
     <img
         src="./ridu.jpeg"
         class="profile"
@@ -446,7 +446,9 @@ button:hover {
 
     </div>
 
-    <button class="back" onclick="showPage('home')">⬅ Back</button>
+    <button class="back" onclick="showPage('home')">
+        ⬅ Back
+    </button>
 
 </section>
 
@@ -461,44 +463,53 @@ button:hover {
 
     <div class="memory-grid">
 
+        <!-- MEMORY IMAGE 1 -->
         <div class="memory-box">
-            <img src="memory1.jpg" alt="Memory 1">
+            <img src="./ridu1.jpeg" alt="Ridhima Memory 1">
             <h3>Memory 1 ❤️</h3>
         </div>
 
+        <!-- MEMORY IMAGE 2 -->
         <div class="memory-box">
-            <img src="memory2.jpg" alt="Memory 2">
+            <img src="./ridu2.jpeg" alt="Ridhima Memory 2">
             <h3>Memory 2 🌸</h3>
         </div>
 
+        <!-- MEMORY IMAGE 3 -->
         <div class="memory-box">
-            <img src="memory3.jpg" alt="Memory 3">
+            <img src="./ridu3.jpeg" alt="Ridhima Memory 3">
             <h3>Memory 3 💕</h3>
         </div>
 
+        <!-- MEMORY IMAGE 4 -->
         <div class="memory-box">
-            <img src="memory4.jpg" alt="Memory 4">
+            <img src="./memory4.jpg" alt="Memory 4">
             <h3>Memory 4 🦋</h3>
         </div>
 
+        <!-- MEMORY IMAGE 5 -->
         <div class="memory-box">
-            <img src="memory5.jpg" alt="Memory 5">
+            <img src="./memory5.jpg" alt="Memory 5">
             <h3>Memory 5 🌷</h3>
         </div>
 
+        <!-- MEMORY IMAGE 6 -->
         <div class="memory-box">
-            <img src="memory6.jpg" alt="Memory 6">
+            <img src="./memory6.jpg" alt="Memory 6">
             <h3>Memory 6 💞</h3>
         </div>
 
+        <!-- MEMORY IMAGE 7 -->
         <div class="memory-box">
-            <img src="memory7.jpg" alt="Memory 7">
+            <img src="./memory7.jpg" alt="Memory 7">
             <h3>Memory 7 ✨</h3>
         </div>
 
     </div>
 
-    <button class="back" onclick="showPage('menu')">⬅ Back</button>
+    <button class="back" onclick="showPage('menu')">
+        ⬅ Back
+    </button>
 
 </section>
 
@@ -527,7 +538,9 @@ button:hover {
 
     </div>
 
-    <button class="back" onclick="showPage('menu')">⬅ Back</button>
+    <button class="back" onclick="showPage('menu')">
+        ⬅ Back
+    </button>
 
 </section>
 
@@ -540,7 +553,7 @@ button:hover {
 
     <div class="gift-detail">
 
-        <img src="teddy.jpg" alt="Teddy Bear">
+        <img src="./teddy.jpg" alt="Teddy Bear">
 
         <h2>My Cute Teddy! 💗</h2>
 
@@ -558,7 +571,9 @@ button:hover {
 
     </div>
 
-    <button class="back" onclick="showPage('gifts')">⬅ Back</button>
+    <button class="back" onclick="showPage('gifts')">
+        ⬅ Back
+    </button>
 
 </section>
 
@@ -571,7 +586,7 @@ button:hover {
 
     <div class="gift-detail">
 
-        <img src="makeup.jpg" alt="Makeup Kit">
+        <img src="./makeup.jpg" alt="Makeup Kit">
 
         <h2>My Beautiful Sister! 🌷</h2>
 
@@ -592,7 +607,9 @@ button:hover {
 
     </div>
 
-    <button class="back" onclick="showPage('gifts')">⬅ Back</button>
+    <button class="back" onclick="showPage('gifts')">
+        ⬅ Back
+    </button>
 
 </section>
 
@@ -605,7 +622,7 @@ button:hover {
 
     <div class="letter-box">
 
-        <img src="letter.jpg" alt="Special Sister Picture">
+        <img src="./letter.jpg" alt="Special Sister Picture">
 
         <div class="letter-text">
 
@@ -646,7 +663,9 @@ button:hover {
                 <br><br>
 
                 <b>With Lots Of Love ❤️</b>
+
                 <br>
+
                 Your Loving Brother 💗
             </p>
 
@@ -672,7 +691,9 @@ button:hover {
 
     </div>
 
-    <button class="back" onclick="showPage('menu')">⬅ Back</button>
+    <button class="back" onclick="showPage('menu')">
+        ⬅ Back
+    </button>
 
 </section>
 
@@ -742,7 +763,13 @@ function showPage(pageId) {
 const flowerContainer = document.getElementById('flowers');
 
 const flowers = [
-    '🌸', '💗', '🌷', '💕', '🦋', '✨', '🌹'
+    '🌸',
+    '💗',
+    '🌷',
+    '💕',
+    '🦋',
+    '✨',
+    '🌹'
 ];
 
 function createFlower() {
@@ -797,7 +824,12 @@ function cutCake() {
     // PARTY CONFETTI BLAST
 
     const partyItems = [
-        '🎉', '🎊', '💖', '✨', '🌸', '🥳'
+        '🎉',
+        '🎊',
+        '💖',
+        '✨',
+        '🌸',
+        '🥳'
     ];
 
     for (let i = 0; i < 70; i++) {
